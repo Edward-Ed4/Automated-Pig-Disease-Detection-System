@@ -99,11 +99,11 @@ Images were manually labeled and can be used to train a lightweight model in Edg
 
 ## 🧑‍💻 Contributors
 
-- Ssenyange Allan – Hardware Integration & Camera Setup  
+- Ssenyange Allan – Hardware Integration &  Camera Setup  
 - Omara Emmanuel – Deployment, Data Collection  
 - Kimera Dave David – System Design & Architecture  
-- Ebaju Edward – Image Processing & Classification Logic  
-- Nabasirye Seanice – Field Research & Documentation
+- Ebaju Edward – Field Research & Documentation   
+- Nabasirye Seanice – Image Processing & Classification Logic
 
 ---
 
