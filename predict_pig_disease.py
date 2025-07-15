@@ -93,7 +93,7 @@ sample_image_path_3 = os.path.join(DATASET_ROOT_PATH, DATA_SUBFOLDER, 'hernia', 
 predict_image(sample_image_path_3)
 
 
-sample_image_path_4 = os.path.join(DATASET_ROOT_PATH, DATA_SUBFOLDER, 'cenker', 'centker6.jpg') # <--- REPLACE 'example_image_2.jpg' with a real filename!
+sample_image_path_4 = os.path.join(DATASET_ROOT_PATH, DATA_SUBFOLDER, 'cenker', 'centker6.jpg') 
 predict_image(sample_image_path_4)
 
 sample_image_path_5 = os.path.join(DATASET_ROOT_PATH, DATA_SUBFOLDER, 'skin chnages', 'skin6.jpg')  
