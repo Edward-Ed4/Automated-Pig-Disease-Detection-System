@@ -1,38 +1,38 @@
 
-# 🐖 Automated Pig Disease Detection System (Machine Learning-Powered)
+# 🐖 Automated Pig Disease Detection System (Embedded ML-Powered)
 
-A cutting-edge livestock health monitoring system for pig farms, leveraging ESP32-CAM for visual data acquisition, a Python Flask server for deep learning-based Machine Learning inference, and a Flutter mobile application for real-time monitoring and alerts.
-
----
-
-## 🚀 Project Summary
-
-This project addresses the critical need for early and efficient disease detection in pig farming. Moving beyond traditional manual inspections, our system automates the process by:
-1.  **Capturing visual data** using a low-cost ESP32-CAM.
-2.  **Transmitting images** to a powerful Python Flask server.
-3.  **Employing a deep learning Machine Learning (ML) model** (MobileNetV2) on the server to analyze visual indicators of pig health, such as changes in skin color, presence of lesions, or altered behavior.
-4.  **Triggering automated email alerts** to stakeholders upon high-confidence Machine Learning prediction.
-5.  **Providing a real-time monitoring dashboard** via a Flutter mobile application.
-
-This automated approach aims to significantly improve animal welfare, reduce operational costs, and enhance overall farm management efficiency, particularly vital for regions like Uganda.
+A cutting-edge **embedded system-based** livestock health monitoring solution for pig farms, leveraging the **ESP32-CAM as its core visual data acquisition unit**, a Python Flask server for deep learning-based Machine Learning inference, and a Flutter mobile application for real-time monitoring and alerts.
 
 ---
 
 ## ✨ Key Features
 
-* **Intelligent Image Acquisition:** ESP32-CAM captures high-quality images of pigs.
+* **Embedded Vision Core:** Utilizes the **ESP32-CAM as the primary embedded device** for intelligent image acquisition.
 * **Toggleable Modes:** Seamlessly switch between **live MJPEG video streaming** to the Flutter app and **periodic image capture for Machine Learning inference** on the ESP32-CAM, optimizing resource usage.
-* **Machine Learning-Powered Disease Classification:** Utilizes a fine-tuned MobileNetV2 deep learning model running on a Python Flask server for accurate identification of various pig health statuses.
+* **Machine Learning-Powered Disease Classification:** Employs a fine-tuned MobileNetV2 deep learning model running on a Python Flask server for accurate identification of various pig health statuses.
 * **Automated Email Alerts:** Sends instant email notifications to predefined recipients when a disease is detected with high confidence, preventing alert fatigue with a cooldown mechanism.
 * **Real-Time Mobile Monitoring:** A cross-platform Flutter application provides a user-friendly dashboard to view the latest Machine Learning predictions, captured images, and system status in real-time.
-* **Modular Architecture:** Separates hardware (ESP32-CAM), backend Machine Learning (Flask), and frontend (Flutter) for scalability and maintainability.
+* **Modular Architecture:** Separates the embedded hardware (ESP32-CAM), backend Machine Learning (Flask), and frontend (Flutter) for scalability and maintainability.
+
+---
+
+## 🚀 Project Summary
+
+This project addresses the critical need for early and efficient disease detection in pig farming. Built upon an **ESP32-CAM embedded system foundation**, our solution automates the visual inspection process by:
+1.  **Capturing visual data** directly from the farm environment using the low-cost ESP32-CAM.
+2.  **Transmitting images** wirelessly to a powerful Python Flask server.
+3.  **Employing a deep learning Machine Learning (ML) model** (MobileNetV2) on the server to analyze visual indicators of pig health, such as changes in skin color, presence of lesions, or altered behavior.
+4.  **Triggering automated email alerts** to stakeholders upon high-confidence Machine Learning prediction.
+5.  **Providing a real-time monitoring dashboard** via a Flutter mobile application, giving farmers immediate insights.
+
+This automated approach aims to significantly improve animal welfare, reduce operational costs, and enhance overall farm management efficiency, particularly vital for regions like Uganda.
 
 ---
 
 ## 🧰 System Architecture
 
-The system operates in a client-server model:
-* **ESP32-CAM (Edge Device):** Captures images, hosts a small web server for control commands, and sends images to the Flask server.
+The system operates in a client-server model, with the **ESP32-CAM serving as the crucial edge device**:
+* **ESP32-CAM (Embedded Edge Device):** The central component for visual data acquisition. It captures images, hosts a small web server for control commands, and sends images to the Flask server.
 * **Python Flask Server (Backend):** Receives images, runs the Machine Learning inference model, stores latest predictions, and sends email alerts.
 * **Flutter Mobile App (Frontend):** Displays live stream, triggers image capture/prediction, and fetches/displays latest ML results.
 
